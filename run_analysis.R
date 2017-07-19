@@ -1,6 +1,6 @@
 library(dplyr)
 #
-setwd("./GettingAndCleaningData/finalProj") # set the wd to the repository directory path
+#setwd("_PATH_TO_Repo/SamsungMobilityDataSet") # set the wd to the repository directory path if necessary
 source("./mergeTestAndTrainSet.R")
 source("./renameActivityData.R")
 #

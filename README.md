@@ -1,5 +1,7 @@
 ## Assignment: Raw data to suggested data sets (MeanAndStdDataSet.csv and AveragedDataSet.csv)
 
+Before you run the R script, make sure the working directory is set to the repository directory!
+
 The main method, **run_analysis.R**, sources the methods defined in **MergeTestAndTrainSet.R** and **renameActivityData.R**. 
 
 The first step is the definition of the input files and the call for *mergeTestAndTrainSet(...)*. This call returns the merged data sets of the training and test set, called dataSet. Here, the variables (columns) are already filtered to contain only mean and standard deviation variables.
