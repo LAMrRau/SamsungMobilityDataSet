@@ -24,7 +24,7 @@ In the fourth step the variable names of both sets are transformed to lowercase.
 In the end the data sets are stored as csv files. 
 
 * dataSet - MeanAndStdDataSet.csv
-* dataSet2 - AveragedDataSet.csv
+* dataSet2 - AveragedDataSet.csv and respectively AveragedDataSet2.txt
 
 ## Variable description of the data sets
 
