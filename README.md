@@ -4,7 +4,7 @@ Before you run the R script, make sure the working directory is set to the repos
 
 The main method, **run_analysis.R**, sources the methods defined in **MergeTestAndTrainSet.R** and **renameActivityData.R**. This method works on the Samsung Mobility data set which is included in the repository.
 
-####What happens in run_analysis.R:
+#### What happens in run_analysis.R
 
 The first step is the definition of the input files and the call for *mergeTestAndTrainSet(...)*. This call returns the merged data sets of the training and test set, called dataSet. Here, the variables (columns) are already filtered to contain only mean and standard deviation variables.
 
