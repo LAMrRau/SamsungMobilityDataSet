@@ -14,7 +14,7 @@ In the third step for both data sets the nomenclature for the activity variable 
 
 In the fourth step the variable names of both sets are transformed to lowercase. And non-character chars are removed.
 
-In the end the data sets are stored as csv files. 
+In the end the data sets are stored as csv/txt files. 
 
 * dataSet - MeanAndStdDataSet.csv
 * dataSet2 - AveragedDataSet.txt
