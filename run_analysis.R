@@ -1,6 +1,6 @@
 library(dplyr)
 #
-#setwd("_PATH_TO_Repo/SamsungMobilityDataSet") # set the wd to the repository directory path if necessary
+setwd("./GettingAndCleaningData/SamsungMobilityDataSet") # set the wd to the repository directory path if necessary
 source("./mergeTestAndTrainSet.R")
 source("./renameActivityData.R")
 #
@@ -12,16 +12,20 @@ source("./renameActivityData.R")
    fileTrainX <- "./UCI HAR Dataset/train/X_train.txt"
    fileTestY <- "./UCI HAR Dataset/test/y_test.txt"
    fileTrainY <- "./UCI HAR Dataset/train/y_train.txt"
+   fileTestSub <- "./UCI HAR Dataset/test/subject_test.txt"
+   fileTrainSub <- "./UCI HAR Dataset/train/subject_train.txt"
    fileColumnNames <- "./UCI HAR Dataset/features.txt"
    dataSet <- mergeTestAndTrainSet(fileTestX,
                                    fileTestY,
+                                   fileTestSub,
                                    fileTrainX,
                                    fileTrainY,
+                                   fileTrainSub,
                                    fileColumnNames)
 #   
 # 5.) process this data to: average of each variable for each activity and each subject
 #   
-   dataSet2 <- dataSet %>% group_by(Activity) %>% summarise_all(funs(mean))
+   dataSet2 <- dataSet %>% group_by(Subject, Activity) %>% summarise_all(funs(mean))
 #
 # 3.) substitute activity numbers with descriptive names (rows) .. based on
 #     activity label file
@@ -38,6 +42,5 @@ source("./renameActivityData.R")
 # writing the data sets
 #
    write.csv(dataSet, file = "MeanAndStdDataSet.csv")
-   write.csv(dataSet2, file = "AveragedDataSet.csv")
-   write.table(dataSet2, file = "AveragedDataSet2.txt", row.name=FALSE)
+   write.table(dataSet2, file = "AveragedDataSet.txt", row.name=FALSE)
    

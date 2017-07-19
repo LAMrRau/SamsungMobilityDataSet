@@ -7,8 +7,10 @@
 
 mergeTestAndTrainSet <- function( fTestX, 
                                   fTestY, 
+                                  fTestSub,
                                   fTrainX, 
                                   fTrainY,
+                                  fTrainSub,
                                   fColumnNames) {
    #
    # read measurement data
@@ -19,22 +21,27 @@ mergeTestAndTrainSet <- function( fTestX,
    # read activity data
    testSet <- read.table(fTestY, header = FALSE) 
    trainSet <- read.table(fTrainY, header = FALSE)
+   dataSet <- cbind(rbind(testSet,trainSet),dataSet)
    #
-   #combine measurement and activity data
+   # read subject data
+   testSet <- read.table(fTestSub, header = FALSE) 
+   trainSet <- read.table(fTrainSub, header = FALSE)
+   #
+   # combine the rest
    dataSet <- cbind(rbind(testSet,trainSet),dataSet)
    #
    # read measurement names
    colNames <- read.csv(fColumnNames, sep = " ", header = FALSE)
    #
    # add a field for the activity data and set the column names
-   charVec <- c("Activity", as.character(colNames$V2))
+   charVec <- c("Subject","Activity", as.character(colNames$V2))
    names(dataSet) <- charVec
    #
    # make the filter for mean and std values
    filterMean <- grepl("-mean\\(\\)", charVec)
    filterStd <- grepl("-std()", charVec)
    filter <- as.logical(filterMean + filterStd)
-   filter[1] <- TRUE
+   filter[1:2] <- TRUE
    #
    # return the filtered dataSet
    dataSet[,filter]

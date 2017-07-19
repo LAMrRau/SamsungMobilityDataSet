@@ -121,7 +121,10 @@ $(document).ready(function () {
 
 <div id="assignment-raw-data-to-suggested-data-sets-meanandstddataset.csv-and-averageddataset.csv" class="section level2">
 <h2>Assignment: Raw data to suggested data sets (MeanAndStdDataSet.csv and AveragedDataSet.csv)</h2>
-<p>The main method, <strong>run_analysis.R</strong>, sources the methods defined in <strong>MergeTestAndTrainSet.R</strong> and <strong>renameActivityData.R</strong>.</p>
+<p>Before you run the R script, make sure the working directory is set to the repository directory!</p>
+<p>The main method, <strong>run_analysis.R</strong>, sources the methods defined in <strong>MergeTestAndTrainSet.R</strong> and <strong>renameActivityData.R</strong>. This method works on the Samsung Mobility data set which is included in the repository.</p>
+<div id="what-happens-in-run_analysis.r" class="section level4">
+<h4>What happens in run_analysis.R:</h4>
 <p>The first step is the definition of the input files and the call for <em>mergeTestAndTrainSet(…)</em>. This call returns the merged data sets of the training and test set, called dataSet. Here, the variables (columns) are already filtered to contain only mean and standard deviation variables.</p>
 <p>The second step is the creation of the activity group averaged data set, called dataSet2.</p>
 <p>In the third step for both data sets the nomenclature for the activity variable is changed from numerical description (int numbers 1 to 6) to wording (walking, laying, sitting…).</p>
@@ -129,8 +132,9 @@ $(document).ready(function () {
 <p>In the end the data sets are stored as csv files.</p>
 <ul>
 <li>dataSet - MeanAndStdDataSet.csv</li>
-<li>dataSet2 - AveragedDataSet.csv</li>
+<li>dataSet2 - AveragedDataSet.txt</li>
 </ul>
+</div>
 </div>
 
 

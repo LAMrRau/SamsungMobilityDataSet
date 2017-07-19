@@ -7,7 +7,7 @@ output:
       toc: true
       toc_depth: 2
 ---
-This code book shall explain the procedure to convert the raw data (10299 observations for 562 variables), as presented here: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>, to the two datasets (10299 obsercations for 67 variables) included in this repository. Furthermore, the column variables of the datasets are summarized.
+This code book shall explain the procedure how to convert the raw data (10299 observations for 563 variables), as presented here: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>, to the two datasets (10299 obsercations for 68 variables) included in this repository. Furthermore, the column variables of the datasets are summarized.
 
 ## Procedure: Raw data to suggested data sets (MeanAndStdDataSet.csv and AveragedDataSet.csv)
 
@@ -30,7 +30,9 @@ In the end the data sets are stored as csv files.
 
 Description for the 67 variables contained in the data sets. The min/max/mean values are based on the dataSet data and can be used to varify the correctness of a generated data set.
 
-####  1. ```activity```:
+####  1. ```subject```:
+
+####  2. ```activity```:
    Activity performed by subject during measurement.
    
    Values:
@@ -42,7 +44,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * standing
    * laying
 
-####  2. ```tbodyaccmeanx```:
+####  3. ```tbodyaccmeanx```:
    Mean body linear acceleration in X direction (time domain)
    
    Value range:
@@ -51,7 +53,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.2743
    
-####  3. ```tbodyaccmeany```:
+####  4. ```tbodyaccmeany```:
    Mean body linear acceleration in Y direction (time domain)
    
    Value range:
@@ -60,7 +62,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.01774
    
-####  4. ```tbodyaccmeanz```:
+####  5. ```tbodyaccmeanz```:
    Mean body linear acceleration in Z direction (time domain)
    
    Value range:
@@ -69,7 +71,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.10892
    
-####  5. ```tbodyaccstdx```:
+####  6. ```tbodyaccstdx```:
    Standard deviation for body linear acceleration in X direction (time domain)
    
    Value range:
@@ -78,7 +80,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6078
    
-####  6. ```tbodyaccstdy```:
+####  7. ```tbodyaccstdy```:
    Standard deviation for body linear acceleration in Y direction (time domain)
    
    Value range:
@@ -87,7 +89,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.51019
    
-####  7. ```tbodyaccstdz```:
+####  8. ```tbodyaccstdz```:
    Standard deviation for body linear acceleration in Z direction (time domain)
    
    Value range:
@@ -96,7 +98,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6131
    
-####  8. ```tgravityaccmeanx```:
+####  9. ```tgravityaccmeanx```:
    Mean gravity acceleration in X direction (time domain)
    
    Value range:
@@ -105,7 +107,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.6692
    
-####  9. ```tgravityaccmeany```:
+####  10. ```tgravityaccmeany```:
    Mean gravity acceleration in Y direction (time domain)
    
    Value range:
@@ -114,7 +116,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.004039
    
-#### 10. ```tgravityaccmeanz```:
+#### 11. ```tgravityaccmeanz```:
    Mean gravity acceleration in Z direction (time domain)
    
    Value range:
@@ -123,7 +125,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.09215
    
-#### 11. ```tgravityaccstdx```:
+#### 12. ```tgravityaccstdx```:
    Standard deviation for gravity acceleration in X direction (time domain)
    
    Value range:
@@ -132,7 +134,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.9652
    
-#### 12. ```tgravityaccstdy```:
+#### 13. ```tgravityaccstdy```:
    Standard deviation for gravity acceleration in Y direction (time domain)
    
    Value range:
@@ -141,7 +143,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.9544
    
-#### 13. ```tgravityaccstdz```:
+#### 14. ```tgravityaccstdz```:
    Standard deviation for gravity acceleration in Z direction (time domain)
    
    Value range:
@@ -150,7 +152,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.9389
    
-#### 14. ```tbodyaccjerkmeanx```:
+#### 15. ```tbodyaccjerkmeanx```:
    Mean jerk signal for the body linear acceleration in X direction (time domain)
    
    Value range:
@@ -159,7 +161,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.07894
    
-#### 15. ```tbodyaccjerkmeany```:
+#### 16. ```tbodyaccjerkmeany```:
    Mean jerk signal for the body linear acceleration in Y direction (time domain)
    
    Value range:
@@ -168,7 +170,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.007948
    
-#### 16. ```tbodyaccjerkmeanz```:
+#### 17. ```tbodyaccjerkmeanz```:
    Mean jerk signal for the body linear acceleration in Z direction (time domain)
    
    Value range:
@@ -177,7 +179,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.004675
    
-#### 17. ```tbodyaccjerkstdx```:
+#### 18. ```tbodyaccjerkstdx```:
    Standard deviation for jerk signal for the body linear acceleration in X direction (time domain)
    
    Value range:
@@ -186,7 +188,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6398
    
-#### 18. ```tbodyaccjerkstdy```:
+#### 19. ```tbodyaccjerkstdy```:
    Standard deviation for jerk signal for the body linear acceleration in Y direction (time domain)
    
    Value range:
@@ -195,7 +197,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6080
    
-#### 19. ```tbodyaccjerkstdz```:
+#### 20. ```tbodyaccjerkstdz```:
    Standard deviation for jerk signal for the body linear acceleration in Z direction (time domain)
    
    Value range:
@@ -204,7 +206,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7628
    
-#### 20. ```tbodygyromeanx```:
+#### 21. ```tbodygyromeanx```:
    Mean body angular velocity in X direction (time domain)
    
    Value range:
@@ -213,7 +215,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.03098
    
-#### 21. ```tbodygyromeany```:
+#### 22. ```tbodygyromeany```:
    Mean body angular velocity in Y direction (time domain)
    
    Value range:
@@ -222,7 +224,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.07472
    
-#### 22. ```tbodygyromeanz```:
+#### 23. ```tbodygyromeanz```:
    Mean body angular velocity in Z direction (time domain)
    
    Value range:
@@ -231,7 +233,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = 0.08836
    
-#### 23. ```tbodygyrostdx```:
+#### 24. ```tbodygyrostdx```:
    Standard deviation for body angular velocity in X direction (time domain)
    
    Value range:
@@ -240,7 +242,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7212
    
-#### 24. ```tbodygyrostdy```:
+#### 25. ```tbodygyrostdy```:
    Standard deviation for body angular velocity in Y direction (time domain)
    
    Value range:
@@ -249,7 +251,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6827
    
-#### 25. ```tbodygyrostdz```:
+#### 26. ```tbodygyrostdz```:
    Standard deviation for body angular velocity in Z direction (time domain)
    
    Value range:
@@ -258,7 +260,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6537
    
-#### 26. ```tbodygyrojerkmeanx```:
+#### 27. ```tbodygyrojerkmeanx```:
    Mean jerk signal for body angular velocity in X direction (time domain)
    
    Value range:
@@ -267,7 +269,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.09671
    
-#### 27. ```tbodygyrojerkmeany```:
+#### 28. ```tbodygyrojerkmeany```:
    Mean jerk signal for body angular velocity in Y direction (time domain)
    
    Value range:
@@ -276,7 +278,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.04232
    
-#### 28. ```tbodygyrojerkmeanz```:
+#### 29. ```tbodygyrojerkmeanz```:
    Mean jerk signal for body angular velocity in Z direction (time domain)
    
    Value range:
@@ -285,7 +287,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.05483
    
-#### 29. ```tbodygyrojerkstdx```:
+#### 30. ```tbodygyrojerkstdx```:
    Standard deviation for jerk signal for body angular velocity in X direction (time domain)
    
    Value range:
@@ -294,7 +296,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7313
    
-#### 30. ```tbodygyrojerkstdy```:
+#### 31. ```tbodygyrojerkstdy```:
    Standard deviation for jerk signal for body angular velocity in Y direction (time domain)
    
    Value range:
@@ -303,7 +305,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7861
    
-#### 31. ```tbodygyrojerkstdz```:
+#### 32. ```tbodygyrojerkstdz```:
    Standard deviation for jerk signal for body angular velocity in Z direction (time domain)
    
    Value range:
@@ -312,7 +314,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7399
    
-#### 32. ```tbodyaccmagmean```:
+#### 33. ```tbodyaccmagmean```:
    Mean magnitude for body linear acceleration(time domain)
    
    Value range:
@@ -321,7 +323,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5482
    
-#### 33. ```tbodyaccmagstd```:
+#### 34. ```tbodyaccmagstd```:
    Standard deviation of magnitude for body linear acceleration(time domain)
    
    Value range:
@@ -330,7 +332,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5912
    
-#### 34. ```tgravityaccmagmean```:
+#### 35. ```tgravityaccmagmean```:
    Mean magnitude for gravity linear acceleration(time domain)
    
    Value range:
@@ -339,7 +341,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5482
    
-#### 35. ```tgravityaccmagstd```:
+#### 36. ```tgravityaccmagstd```:
    Standard deviation of magnitude for body linear acceleration(time domain)
    
    Value range:
@@ -348,7 +350,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5912
    
-#### 36. ```tbodyaccjerkmagmean```:
+#### 37. ```tbodyaccjerkmagmean```:
    Mean jerk of magnitude for body linear acceleration(time domain)
    
    Value range:
@@ -357,7 +359,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6494
    
-#### 37. ```tbodyaccjerkmagstd```:
+#### 38. ```tbodyaccjerkmagstd```:
    Standard deviation of jerk for magnitude for body linear acceleration(time domain)
    
    Value range:
@@ -366,7 +368,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6278
    
-#### 38. ```tbodygyromagmean```:
+#### 39. ```tbodygyromagmean```:
    Mean magnitude for body angular velocity (time domain)
    
    Value range:
@@ -375,7 +377,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6052
    
-#### 39. ```tbodygyromagstd```:
+#### 40. ```tbodygyromagstd```:
    Standard deviation of magnitude for body angular velocity (time domain)
    
    Value range:
@@ -384,7 +386,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6625
    
-#### 40. ```tbodygyrojerkmagmean```:
+#### 41. ```tbodygyrojerkmagmean```:
    Mean of jerk for magnitude for body angular velocity (time domain)
    
    Value range:
@@ -393,7 +395,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7621
    
-#### 41. ```tbodygyrojerkmagstd```:
+#### 42. ```tbodygyrojerkmagstd```:
    Standard deviation of jerk for magnitude for body angular velocity (time domain)
    
    Value range:
@@ -402,7 +404,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7780
    
-#### 42. ```fbodyaccmeanx```:
+#### 43. ```fbodyaccmeanx```:
    Mean body linear acceleration in X direction (frequency domain)
    
    Value range:
@@ -411,7 +413,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6228
    
-#### 43. ```fbodyaccmeany```:
+#### 44. ```fbodyaccmeany```:
    Mean body linear acceleration in Y direction (frequency domain)
    
    Value range:
@@ -420,7 +422,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5375
    
-#### 44. ```fbodyaccmeanz```:
+#### 45. ```fbodyaccmeanz```:
    Mean body linear acceleration in Z direction (frequency domain)
    
    Value range:
@@ -429,7 +431,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6650
    
-#### 45. ```fbodyaccstdx```:
+#### 46. ```fbodyaccstdx```:
    Standard deviation for body linear acceleration in X direction (frequency domain)
    
    Value range:
@@ -438,7 +440,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6034
    
-#### 46. ```fbodyaccstdy```:
+#### 47. ```fbodyaccstdy```:
    Standard deviation for body linear acceleration in Y direction (frequency domain)
    
    Value range:
@@ -447,7 +449,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.52842
    
-#### 47. ```fbodyaccstdz```:
+#### 48. ```fbodyaccstdz```:
    Standard deviation for body linear acceleration in Z direction (frequency domain)
    
    Value range:
@@ -456,7 +458,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6179
    
-#### 48. ```fbodyaccjerkmeanx```:
+#### 49. ```fbodyaccjerkmeanx```:
    Mean jerk signal for the body linear acceleration in X direction (frequency domain)
    
    Value range:
@@ -465,7 +467,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6567
           
-#### 49. ```fbodyaccjerkmeany```: 
+#### 50. ```fbodyaccjerkmeany```: 
    Mean jerk signal for the body linear acceleration in Y direction (frequency domain)
    
    Value range:
@@ -474,7 +476,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6290 
                     
-#### 50. ```fbodyaccjerkmeanz```:
+#### 51. ```fbodyaccjerkmeanz```:
    Mean jerk signal for the body linear acceleration in Z direction (frequency domain)
    
    Value range:
@@ -483,7 +485,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7436
           
-#### 51. ```fbodyaccjerkstdx```:   
+#### 52. ```fbodyaccjerkstdx```:   
    Standard deviation for jerk signal for the body linear acceleration in X direction (frequency domain)
    
    Value range:
@@ -492,7 +494,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6550
             
-#### 52. ```fbodyaccjerkstdy```:    
+#### 53. ```fbodyaccjerkstdy```:    
    Standard deviation for jerk signal for the body linear acceleration in Y direction (frequency domain)
    
    Value range:
@@ -501,7 +503,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6122
            
-#### 53. ```fbodyaccjerkstdz```:
+#### 54. ```fbodyaccjerkstdz```:
    Standard deviation for jerk signal for the body linear acceleration in Z direction (frequency domain)
    
    Value range:
@@ -510,7 +512,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7809
    
-#### 54. ```fbodygyromeanx```:  
+#### 55. ```fbodygyromeanx```:  
    Mean body angular velocity in X direction (frequency domain)
    
    Value range:
@@ -519,7 +521,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6721
                            
-#### 55. ```fbodygyromeany```:  
+#### 56. ```fbodygyromeany```:  
    Mean body angular velocity in Y direction (frequency domain)
    
    Value range:
@@ -528,7 +530,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7062
                            
-#### 56. ```fbodygyromeanz```:  
+#### 57. ```fbodygyromeanz```:  
    Mean body angular velocity in Z direction (frequency domain)
    
    Value range:
@@ -537,7 +539,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6442
                
-#### 57. ```fbodygyrostdx```:   
+#### 58. ```fbodygyrostdx```:   
    Standard deviation for body angular velocity in X direction (frequency domain)
    
    Value range:
@@ -546,7 +548,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7386
                               
-#### 58. ```fbodygyrostdy```:   
+#### 59. ```fbodygyrostdy```:   
    Standard deviation for body angular velocity in Y direction (frequency domain)
    
    Value range:
@@ -555,7 +557,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6742
                               
-#### 59. ```fbodygyrostdz```:   
+#### 60. ```fbodygyrostdz```:   
    Standard deviation of body angular velocity in Z direction (frequency domain)
    
    Value range:
@@ -564,7 +566,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6904
                     
-#### 60. ```fbodyaccmagmean```:      
+#### 61. ```fbodyaccmagmean```:      
    Mean magnitude for body linear acceleration (frequency domain)
    
    Value range:
@@ -573,7 +575,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.5860
           
-#### 61. ```fbodyaccmagstd```:           
+#### 62. ```fbodyaccmagstd```:           
    Standard deviation of magnitude for body linear acceleration (frequency domain)
    
    Value range:
@@ -582,7 +584,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6595
       
-#### 62. ```fbodybodyaccjerkmagmean```:           
+#### 63. ```fbodybodyaccjerkmagmean```:           
    Mean jerk of magnitude for body-body linear acceleration (frequency domain)
    
    Value range:
@@ -591,7 +593,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6208
       
-#### 63. ```fbodybodyaccjerkmagstd```:         
+#### 64. ```fbodybodyaccjerkmagstd```:         
    Standard deviation for jerk of magnitude for body-body linear acceleration (frequency domain)
    
    Value range:
@@ -600,7 +602,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6401
          
-#### 64. ```fbodybodygyromagmean```:        
+#### 65. ```fbodybodygyromagmean```:        
    Mean magnitude for body-body angular velocity (frequency domain)
    
    Value range:
@@ -609,7 +611,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.6974
       
-#### 65. ```fbodybodygyromagstd```:                     
+#### 66. ```fbodybodygyromagstd```:                     
    Standard deviation of magnitude for body-body angular velocity (frequency domain)
    
    Value range:
@@ -618,7 +620,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7000
       
-#### 66. ```fbodybodygyrojerkmagmean```:
+#### 67. ```fbodybodygyrojerkmagmean```:
    Mean jerk of magnitude for body-body angular velocity (frequency domain)
    
    Value range:
@@ -627,7 +629,7 @@ Description for the 67 variables contained in the data sets. The min/max/mean va
    * minVal = -1.0000
    * mean = -0.7798
       
-#### 67. ```fbodybodygyrojerkmagstd```:                
+#### 68. ```fbodybodygyrojerkmagstd```:                
    Standard deviation for jerk of magnitude for body-body angular velocity (frequency domain)
    
    Value range:
