@@ -28,7 +28,7 @@ In the end the data sets are stored as csv files.
 
 ## Variable description of the data sets
 
-Description for the 67 variables contained in the data sets. normalized and centered
+Description for the 67 variables contained in the data sets. The min/max/mean values are based on the dataSet data and can be used to varify the correctness of a generated data set.
 
 ####  1. ```activity```:
    Activity performed by subject during measurement.
